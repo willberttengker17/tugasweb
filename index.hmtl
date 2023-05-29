@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Circle Area Calculator</title>
-</head>
-<body>
-  <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const radius = urlParams.get('radius');
 
-    if (radius === null) {
-      document.body.textContent = 'Error: Please provide a radius parameter in your query string.';
-    } else {
-      const area = Math.PI * radius ** 2;
-      document.body.textContent = `The area of a circle with radius ${radius} is ${area}.`;
-    }
-  </script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>UTS - Dashboard</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h3 id="home">Tugas UTS Kel. A7 | Home</h3>
+    <div class="mobile-display">
+      <img class="hamburger-icon" src="/images/icon-hamburger.svg" alt="icon-hamburger">
+      <img class="close-icon" src="/images/icon-close.svg" alt="icon-close">
+    </div>
+    <nav>
+      <div class="menu"><a href = "/Home.html">Home</a></div>
+      <div class="menu"><a href = "/profilKelompok.html">Profil</a></div>
+      <div class="menu"><a href = "/profilUnsrat.html">UNSRAT</a></div>
+      <div class="menu"><a href = "/other.html">Other</a></div>
+    </nav>
+  </header>
+  
+  <main>
+    <p><div> Website ini membahas tentang bidang-bidang Informatics Technology, seperti Database, Software development, dan Web Development. 
+      Website ini dibuat untuk tugas UTS MK Pemrograman Web</div></p>
+      <div class="home-content">
+        <h4>Database</h4>
+        <img width="40%" class="database" src="/images/database2.jpg" alt="database">
+        <p class="home-deskripsi">
+          Database merupakan istilah yang digunakan untuk mendeskripsikan sekumpulan data yang terorganisir dan umumnya disimpan dan diakses oleh pengguna data. Database membahas konsep-konsep dalam penyimpanan dan pengelolaan data secara elektronik melalui sistem basis data, perancangan sistem basis data, implementasi hasil rancangan pada DBMS, penggunaan SQL untuk transaksi data dan program prosedural. Konsep-konsep perancangan dan implementasi pada matakuliah ini menitik beratkan pada model basis data relasional yang sampai saat ini masih populer digunakan dalam pengembangan aplikasi komputer maupun operasional sistem informasi organisasi.
+        </p>
+        <p class="lihat-lebih">Lihat Selengkapnya</p>
+      </div>
+      <div class="home-content">
+        <h4>Software Development</h4>
+        <img class="softdev" src="/images/software2.png" alt="software">
+        <p class="home-deskripsi">
+          Software Development merupakan bidang ilmu Informatika yang membahas berbagai macam Process Model dalam Software Engineering, seperti persyaratan, pemodelan, perancangan, pengujian, implementasi dan pemeliharaan perangkat lunak.
+        </p>
+        <p class="lihat-lebih">Lihat Selengkapnya</p>
+      </div>
+      <div class="home-content">
+        <h4>Web Development</h4>
+        <img class="webdev" src="/images/webdev2.jpg" alt="webdev">
+        <p class="home-deskripsi">
+          Web development adalah proses menciptakan situs web, mulai dari perencanaan hingga peluncuran dan pemeliharaan. Tahapannya meliputi perancangan tampilan dan fungsionalitas situs web, pengembangan menggunakan teknologi web seperti HTML, CSS, dan JavaScript, pengujian untuk memastikan situs web bekerja dengan baik, dan penyebaran situs web ke server.
+        </p>
+        <p class="lihat-lebih">Lihat Selengkapnya</p>
+      </div>
+      
+      
+  </main>
+  
+  <footer>
+    Pemrograman Web Kel.A7 2023
+  </footer>
+  
+  <script src="script.js"></script>
 </body>
+
 </html>
