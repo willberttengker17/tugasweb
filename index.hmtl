@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Circle Area Calculator</title>
+</head>
+<body>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const radius = urlParams.get('radius');
+
+    if (radius === null) {
+      document.body.textContent = 'Error: Please provide a radius parameter in your query string.';
+    } else {
+      const area = Math.PI * radius ** 2;
+      document.body.textContent = `The area of a circle with radius ${radius} is ${area}.`;
+    }
+  </script>
+</body>
+</html>
